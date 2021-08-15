@@ -6,6 +6,10 @@ body {
   overflow-x: hidden;
 }
 
+body.scrolloff {
+  overflow: hidden;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -29,6 +33,68 @@ h2 {
 
 .burger {
   display: none;
+}
+
+.menu.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.menu.open .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 52px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 65px auto;
+  font-weight: bold;
+  font-size: 1.88em;
+}
+.menu.open .menu__exit {
+  display: block;
+  position: absolute;
+  right: 28px;
+  top: 65px;
+}
+.menu.open .menu__lang {
+  display: block;
+}
+
+.menu__lang {
+  display: none;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-size: 1.8em;
+  margin-top: 660px;
+  position: absolute;
+  right: -30px;
+  padding-top: 50px;
+}
+.menu__lang .lang__eng {
+  font-weight: bold;
+}
+.menu__lang .lang__ru {
+  color: #828282;
 }
 
 .header {
@@ -83,6 +149,9 @@ h2 {
 .menu__link {
   color: #000;
 }
+.menu__exit {
+  display: none;
+}
 
 .author-name {
   width: 124px;
@@ -95,6 +164,12 @@ h2 {
   margin-top: 45px;
 }
 
+.lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -1;
+}
 .lang__change {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;

@@ -71,13 +71,8 @@
 		&__stats
 			flex-direction: column
 			align-items: flex-start
-			// margin-top: px
 			line-height: 1.3
 			margin-left: -5px
-		// justify-content: flex-end
-		// position: absolute
-		// right: 30px
-		// top: 67px
 	.menu, .header__underline
 		display: none
 
@@ -87,22 +82,12 @@
 		padding-right: 40px
 
 @media screen and (max-width: 375px)
-	.burger
-		position: absolute
-		right: 30px
-		top: 67px
-	.header
-		&__stats
-			flex-direction: column
+	.menu.open
+		.menu__list
 			align-items: flex-start
-			// margin-top: px
-			line-height: 1.3
-			margin-left: -5px
-		&__image
-			margin-top: 40px
-	// .lang
-	// 	position: absolute
-		// display: none
+			margin: 0px
+			margin-top: 65px
+			margin-left: 25px
 	.author-name
 		margin-top: 20px
 	.author-stat
@@ -164,9 +149,5 @@
 			// margin-top: 45px
 			font-size: 18px
 
-// @media screen and (max-width: 1024)
-// 	.section, .header, .footer
-// 		background-color: green
-// 		padding-left: 30px
-// 		padding-right: 30px
+
 

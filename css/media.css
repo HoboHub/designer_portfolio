@@ -75,18 +75,11 @@
     padding-left: 40px;
     padding-right: 40px; } }
 @media screen and (max-width: 375px) {
-  .burger {
-    position: absolute;
-    right: 30px;
-    top: 67px; }
-
-  .header__stats {
-    flex-direction: column;
+  .menu.open .menu__list {
     align-items: flex-start;
-    line-height: 1.3;
-    margin-left: -5px; }
-  .header__image {
-    margin-top: 40px; }
+    margin: 0px;
+    margin-top: 65px;
+    margin-left: 25px; }
 
   .author-name {
     margin-top: 20px; }

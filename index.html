@@ -11,10 +11,13 @@
 <body>
 	<!-- <div class="wrapper"> -->
 		<header class="header">
-			<div class="burger">
+			<div class="burger" id="js-burger">
 				<img src="img/burger.svg" alt="">
 			</div>
-			<nav class="header__menu menu">
+			<nav class="header__menu menu" id="js-menu">
+				<div class="menu__exit" id="js-menu__exit">
+					<img src="img/exit.svg" alt="x">
+				</div>
 				<ul class="menu__list">
 					<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">About me</a></li>
@@ -22,6 +25,13 @@
 					<li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
 					<li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
 				</ul>
+
+				<div class="menu__lang" id="js-menu__lang">
+					<div class="lang__change">
+						<div class="lang__ru">RU</div>|
+						<div class="lang__eng">ENG</div>
+					</div>
+				</div>
 			</nav>
 
 			<hr class="header__underline">
@@ -31,7 +41,7 @@
 				<!-- <div class="author-prof">UX|UI designer</div> -->
 				<div class="author-stat">UX|UI designer <br> 24 years old, Minsk</div>
 
-				<div class="lang">
+				<div class="lang" id="js-lang">
 					<div class="lang__change">
 						<div class="lang__ru">RU</div>|
 						<div class="lang__eng">ENG</div>
@@ -177,6 +187,8 @@
 			<div class="footer__text">Like me on<br><span>Linkdin, Behance, Dribble</span></div>
 		</footer>
 	<!-- </div> -->
+
+	<script src="js/script.js"></script>
 </body>
 </html>
 
