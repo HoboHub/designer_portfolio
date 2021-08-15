@@ -2,7 +2,7 @@ let burger = document.getElementById('js-burger');
 
 burger.onclick = function() {
 	let mnu = document.getElementById("js-menu");
-	mnu.classList.toggle('open');
+	mnu.classList.toggle('open'); 
 
 	let body = document.getElementsByTagName('body');
 	body[0].classList.add('scrolloff');
